@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project 5 - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Project 8</h1>
+						<p>API Security Requirements</p>
+						<a href="index.html" class="button">Home</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/HR 2.jpg" alt="" /></span>
+								<h2>Introduction</h2>
+								<p>For this activity, I chose to evaluate the security requirements of the GitHub API due to its popularity, 
+									extensive documentation, built-in security features, and versatility. The GitHub API is widely used,
+									 making it a relevant and practical choice for understanding and implementing security measures in 
+									 data sharing, scraping, and connectivity between Python code and various file formats/management
+									  systems (XML, JSON, and SQL) (Bansal, n.d.).</p>
+								<p>An API (Application Programming Interface) is a set of definitions and protocols that 
+									enable communication between two software components. For example, a weather app 
+									communicates with a weather bureau’s system to display updates on your phone. 
+									APIs function through client-server architecture, where the client sends requests 
+									and the server responds. There are various types of APIs, including SOAP, RPC, Websocket, 
+									and REST, with REST being the most common. REST APIs operate over HTTP and are stateless, 
+									meaning they do not store client data between requests. APIs offer benefits like integration, 
+									innovation, expansion, and ease of maintenance. They can be public, private, partner, or composite,
+									 depending on their use scope. API endpoints are critical for security and performance,
+									  necessitating proper authentication and monitoring. Building an API involves planning, building, 
+									  testing, documenting, and marketing it. API testing ensures functionality and security, 
+									  while comprehensive documentation enhances usability. APIs can be found on marketplaces and 
+									  directories, with API gateways managing multiple APIs efficiently. Tools like Amazon API Gateway 
+									  and AWS AppSync facilitate API management and GraphQL API development (Amazon Web Services, Inc., n.d.).</p>
+								<p>The GitHub REST API provides developers with the means to access and interact with GitHub 
+									resources such as repositories, commits, and issues. To ensure secure data sharing, 
+									scraping, and connectivity between a Python program and various file formats/management 
+									systems like XML, JSON, and SQL, several security requirements must be met (Github, 2022).</p>	  
+								<p>First, all API requests must be authenticated using OAuth tokens or personal access tokens. 
+									These tokens should follow the least privilege principle, only requesting the necessary scopes 
+									for the application to function. Tokens must be stored securely, avoiding hard coding them in 
+									the source code. Adherence to GitHub’s rate limiting is crucial to prevent abuse and potential 
+									denial of service. Implementing exponential backoff and retry logic can handle rate limits gracefully, 
+									optimising the number of API calls made (Github, 2024).</p>
+								<p>Encryption is vital for securing data transmission between the client and the GitHub API. 
+									Using HTTPS for all API requests ensures data is encrypted, preventing man-in-the-middle attacks. 
+									Additionally, data validation and sanitisation are necessary to prevent injection attacks. 
+									Utilising libraries and frameworks that offer built-in data validation and sanitisation, 
+									along with regularly updating dependencies, helps mitigate these risks.</p>
+								<p>Robust error handling is essential for managing API errors effectively. 
+									Logging errors for debugging purposes without exposing sensitive information 
+									and providing meaningful error messages ensures the application can recover from errors. 
+									Controlling access to sensitive data and operations through proper access control mechanisms 
+									is another critical aspect. Using GitHub’s API access control features helps limit 
+									actions based on user roles and permissions, ensuring only authorised users can perform 
+									critical operations.</p>
+								<p>Monitoring and auditing API usage can detect and respond to potential security incidents. 
+									Using GitHub’s audit logs and third-party monitoring tools to track API usage and detect anomalies, 
+									setting up alerts for unusual activities, or potential security breaches is recommended (GitHub Docs, n.d.). </p>
+								<p>When dealing with data formats such as XML, JSON, and SQL, specific security considerations 
+									should be taken into account. For XML, it is essential to ensure proper parsing to prevent XML 
+									External Entity (XXE) attacks, using libraries that disable external entity processing. 
+									For JSON, validating and sanitizing data prevents injection attacks, and secure parsing methods 
+									should be employed. For SQL, parameterized queries must be used to prevent SQL injection, 
+									and the database should be secured with proper access controls.</p> 
+								<p>By adhering to these security requirements, risks associated with using the GitHub API for 
+									data sharing, scraping, and connectivity in a Python application can be mitigated. 
+									Proper authentication, encryption, validation, access control, and monitoring are critical 
+									components to ensure the secure use of the API.</p>
+								<p>References:
+									‌ Amazon Web Services, Inc. (n.d.). What is an API? - API Beginner’s Guide - AWS. [online] Available at: https://aws.amazon.com/what-is/api/#:~:text=APIs%20are%20mechanisms%20that%20enable.
+									GitHub Docs. (n.d.). Authorizing OAuth apps. [online] Available at: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps [Accessed 22 May 2024].
+									GitHub Docs. (n.d.). Quickstart for securing your organization. [online] Available at: https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-organization [Accessed 23 May 2024]. 
+									GitHub Docs. (n.d.). GitHub REST API. [online] Available at: https://docs.github.com/en/rest?apiVersion=2022-11-28.
+									Bansal, K. (n.d.). Introduction to Github APIs. [online] www.loginradius.com. Available at: https://www.loginradius.com/blog/engineering/github-api [Accessed 23 May 2024].
+									</p>
+									
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+				
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Phone</dt>
+								<dd>+447539859851</dd>
+								<dt>Email</dt>
+								<dd><a href="#">nimasosman@gmail.com</a></dd>
+							</dl>
+                            <ul class="icons">
+								<li><a href="https://m.facebook.com/nima.osman.94/?locale=en_GB" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/nima-osman/" class="fa-brands fa-linkedin"></i> alt"><span class="label">fa-linkedin</span></a></li>
+								<li><a href="https://github.com/Nima-Osman" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
